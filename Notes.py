@@ -140,4 +140,5 @@ def func(first, last): # first and last are variables in the function
 # leave 2 lines after defining one to make sure it works
 
 func("Haris", "The Human") # here you enter the values of the variables 
+print(round(1.9)) # rounds a number in it 
 
