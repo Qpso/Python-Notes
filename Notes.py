@@ -126,4 +126,18 @@ msg = f'{first} {last} is a coder'
 print(msg)
 # this will print John Smith is a coder
 # this make's it easier to type 
+#! Functions
+def function(): # this is a function
+    print("Hello")
+    print("You're so cool")
+# leave 2 lines after defining one to make sure it works
+
+function() 
+
+def func(first, last): # first and last are variables in the function
+    print(f"Hello {first} {last}")
+    print("You're so cool")
+# leave 2 lines after defining one to make sure it works
+
+func("Haris", "The Human") # here you enter the values of the variables 
 
