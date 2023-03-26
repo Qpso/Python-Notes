@@ -4,6 +4,13 @@
 # float(value) into a decimil number
 # bool(value) into a boolean which is a true or false
 # print is to display text on screen
+# can print multiline as follows:
+course = '''
+Hey this is a multiline comment
+it can be written like this
+cool right?
+'''
+print(course) 
 # print(10 - 3) will give 7, there is also + for plus, * for multiplication, and / for division
 # this is also ** for to the power of, example: 10 ** 3 
 # there is a division with // as well that gives an integer as compared to a float from a /
@@ -118,5 +125,4 @@ last = 'Smith'
 msg = f'{first} {last} is a coder'
 print(msg)
 # this will print John Smith is a coder
-
 
