@@ -125,4 +125,5 @@ last = 'Smith'
 msg = f'{first} {last} is a coder'
 print(msg)
 # this will print John Smith is a coder
+# this make's it easier to type 
 
