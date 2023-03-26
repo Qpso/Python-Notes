@@ -112,5 +112,11 @@ for digits in numeric: # but if you add this then you'll get 0,1,2,3,4
 #! Tuples:
 # kind of like lists but cant be modified, we use [] for lists and () for tuples 
 # you cant modify tuples but you can use .index and .count on it since it only views and doesnt modify 
+# formatted strings can be used to visualize a variable easily:
+first = 'John'
+last = 'Smith'
+msg = f'{first} {last} is a coder'
+print(msg)
+# this will print John Smith is a coder
 
 
