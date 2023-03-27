@@ -26,3 +26,13 @@ print("Your average marks are", average_marks)
 
 grade = compute_grade(average_marks)
 print("Your grade is", grade)
+
+# here's another example:
+def multiply(*numbers):
+    total = 1 
+    for number in numbers:
+        total *= number
+    return total 
+
+
+print(multiply(2, 3, 4, 5)) 

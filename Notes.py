@@ -68,7 +68,7 @@ i = 1
 while i <= 5: 
     print(i)
     i += 1 # this will print all numbers till 5 while i is less than or equal to 1:
-    # you can see that neat little += 1 instead of i = i + 1 coming in handy there 
+    # you can see that neat little += 1 instead of i = i + 1 coming in handy there, it's called an augmented  assignment operator 
  # you can also change the output to give a str instead of a number using: 
 n = 1 
 while n <= 10: 
@@ -156,31 +156,5 @@ print("The sum is", result) # also note that once return is used in a function t
 # there are also many built in functions that we've already used in python like print, int, str, len, etc. 
 # built in functions are defined inside the python programming language and can be called from anywhere 
 
-# here's an example of a function using stuff we've learnt so far: 
-# function to find average marks 
-def find_average_marks(marks):
-    sum_of_marks = sum(marks)
-    total_subjects = len(marks)
-    average_marks = sum_of_marks / total_subjects
-    return average_marks
+# I've made an example of a function called example 1, it's in the repository 
 
-
-# calculate grade and return it
-def compute_grade(average_marks):
-    if average_marks >= 80:
-        grade = 'A'
-    elif average_marks >= 60:
-        grade = 'B'
-    elif average_marks >= 50:
-        grade = 'C'
-    else:
-        grade = 'F'
-    return grade 
-
-marks = [55, 64, 75, 80, 65]
-average_marks = find_average_marks(marks)
-print("Your average marks are", average_marks)
-
-
-grade = compute_grade(average_marks)
-print("Your grade is", grade)
