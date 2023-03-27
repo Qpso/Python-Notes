@@ -156,5 +156,12 @@ print("The sum is", result) # also note that once return is used in a function t
 # there are also many built in functions that we've already used in python like print, int, str, len, etc. 
 # built in functions are defined inside the python programming language and can be called from anywhere 
 
-# I've made an example of a function called example 1, it's in the repository 
+# I've made examples of functions called example 1, it's in the repository.
+
+# here's how to use functions to access certain values
+def save_user(**user):
+    print(user["name"])
+
+
+save_user(id=1, name="Haris", age=22) 
 
