@@ -139,6 +139,48 @@ def func(first, last): # first and last are variables in the function
     print("You're so cool")
 # leave 2 lines after defining one to make sure it works
 
-func("Haris", "The Human") # here you enter the values of the variables 
+func("Haris", "The Human") # here you enter the values of the variables which is called an argument, this line as a whole is a function call
 print(round(1.9)) # rounds a number in it 
 
+# here's another example using return
+def add_numbers(n1,n2):
+    result = n1 + n2 # result is just a variable name, it can be anything 
+    return result # returning result takes it outside of the function instead of keeping it in 
+
+
+number1 = 2.3 # these are our number values
+number2 = 4.5 
+result = add_numbers(number1, number2) # we could've wrote the values of the number here but it's easier to define the variables and then put it in side
+# after putting the values above into add_numbers it goes to n1 and n2 and that is now the value of n1 and n2 respectively 
+print("The sum is", result) # also note that once return is used in a function the control goes back to the call and any lines under it are ignored
+# there are also many built in functions that we've already used in python like print, int, str, len, etc. 
+# built in functions are defined inside the python programming language and can be called from anywhere 
+
+# here's an example of a function using stuff we've learnt so far: 
+# function to find average marks 
+def find_average_marks(marks):
+    sum_of_marks = sum(marks)
+    total_subjects = len(marks)
+    average_marks = sum_of_marks / total_subjects
+    return average_marks
+
+
+# calculate grade and return it
+def compute_grade(average_marks):
+    if average_marks >= 80:
+        grade = 'A'
+    elif average_marks >= 60:
+        grade = 'B'
+    elif average_marks >= 50:
+        grade = 'C'
+    else:
+        grade = 'F'
+    return grade 
+
+marks = [55, 64, 75, 80, 65]
+average_marks = find_average_marks(marks)
+print("Your average marks are", average_marks)
+
+
+grade = compute_grade(average_marks)
+print("Your grade is", grade)
