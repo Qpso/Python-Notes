@@ -144,23 +144,45 @@ print(round(1.9)) # rounds a number in it
 
 # here's another example using return
 def add_numbers(n1,n2):
-    result = n1 + n2 # result is just a variable name, it can be anything 
+    result = n1 + n2 # result is just a variable name, it can be anything, any variable inside a function is a local variable and can't be called outside it
+    # since local variables are only in a function, you can make another function with the same local variable name  
     return result # returning result takes it outside of the function instead of keeping it in 
 
 
 number1 = 2.3 # these are our number values
 number2 = 4.5 
 result = add_numbers(number1, number2) # we could've wrote the values of the number here but it's easier to define the variables and then put it in side
+
 # after putting the values above into add_numbers it goes to n1 and n2 and that is now the value of n1 and n2 respectively 
+
 print("The sum is", result) # also note that once return is used in a function the control goes back to the call and any lines under it are ignored
+
+
+# contrary to local, we have global variables which can be used anywhere, even outside the function
+# global functions are just variables outside a function, we've seen them a lot, example: name = Haris
+# but you can also put a global variable INSIDE a function, note however this is a VERY BAD IDEA
+
+messag= "hii" # this is our global variable, it does not require any additional lines to make it global
+
+def greet(nome):
+    global messag # here is a global variable inside a function
+    messag = "helloo"
+
+
+greet("Haris")
+print(messag) # when printed we will get "helloo" since python reads top to bottom and the global variable in the function comes after the global outside
+
+# now the reason this is a bad pratice is because there might be multiple functions that rely on the value of the first global variable 
+# hence changing it inside is a bad idea 
+
 # there are also many built in functions that we've already used in python like print, int, str, len, etc. 
 # built in functions are defined inside the python programming language and can be called from anywhere 
 
 # I've made examples of functions called example 1, it's in the repository.
 
-# here's how to use functions to access certain values
+# here's how to use functions to access certain values, it's called a dictionary.
 def save_user(**user):
-    print(user["name"])
+    print(user["name"]) # the variable inside the square brackets is the value we'll be accessing 
 
 
 save_user(id=1, name="Haris", age=22) 
