@@ -187,3 +187,9 @@ def save_user(**user):
 
 save_user(id=1, name="Haris", age=22) 
 
+# as mentioned earlier, there are functions that are specific to strings, (functions like variable.specificfunction) 
+# these are called methods, we've looked at some before, for example the upper function:
+test = "Haris" 
+print(test.upper()) 
+# because this functions is specific to strings, we refer to it as a method 
+
