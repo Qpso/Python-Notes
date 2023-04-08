@@ -192,4 +192,5 @@ save_user(id=1, name="Haris", age=22)
 test = "Haris" 
 print(test.upper()) 
 # because this functions is specific to strings, we refer to it as a method 
+# this doesn't modify the original string, it just returns the uppercase version of the string, so if you print(test) you should still print Haris
 
