@@ -1,8 +1,10 @@
  #! Basic's and aritmetic operations
+# Data Types:
 # str(value) turns it into a string, meaning a text (can also be called objects)
 # int(value) make it into a number
 # float(value) into a decimil number
 # bool(value) into a boolean which is a true or false
+# Built in Functions:
 # print is to display text on screen
 # can print multiline as follows:
 course = '''
@@ -87,6 +89,7 @@ print(names[0]) # will print the first name
 print(names[-1]) # to print the last name, -2 to print the second last, etc. 
 # you can also change the name if for example you made a spelling mistake or wanna replace it: 
 names[0] = "Haris"
+# lists are mutable, so you can change the name if you want, where as normal variables are not mutable unless you assign a new value to it
 print(names) # will not print the list with the new name
 # however keep in mind since code is top to bottom, the print(names[0]) will still have the old name since it is higher than when we change it
 # if you want to get a range of values from the list you can do: 
