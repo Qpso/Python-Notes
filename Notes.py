@@ -243,4 +243,27 @@ elif credit.lower() == "no" or income < 5000 or criminal_record.lower() == "yes"
 else:
     print("Please provide valid input.")
 
+#! Modules and importing them
+
+# A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py.
+# You can use any Python source file as a module by executing an import statement in some other Python source file.
+# When the interpreter encounters an import statement, it imports the module if the module is present in the search path.
+
+# Importing a module
+import math
+
+# Now you can use any of the functions in the math module by prefixing them with "math."
+# For example:
+print(math.sqrt(4))  # Outputs: 2.0
+
+# You can also import specific functions from a module to avoid having to prefix them.
+from math import pi, sin
+
+# Now you can use pi and sin directly without prefixing them.
+print(pi)  # Outputs: 3.141592653589793
+print(sin(0))  # Outputs: 0.0
+
+# You can also import a module under a different name.
+import math as m
+print(m.sqrt(9))  # Outputs: 3.0
 
