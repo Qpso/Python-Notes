@@ -218,5 +218,29 @@ print(test.upper())
 # for example to get the address we use:
 print(id(nume2)) # which for now will give an id 1630272231888
 # but if there are two variables assigned with the same value, they will have the same address 
+ #! Logical Operators
+# Have mentioned some of these above but here they are:   
+'''
+and - used to see if 2 statments are true or false
+or - used to see if 1 out of 2 statments are true or false
+not - can be used with and to see if one statment is true and one is false
+if - used to see if a statment is true or false
+else - used with if and is usually used when the opposite of "if" is present 
+elif - used with if statment and is just another way of saying else if
+'''
+# example: 
+credit = input("Do you have good credit? (yes/no): ")
+income = float(input("What is your monthly income? "))
+criminal_record = input("Do you have a criminal record? (yes/no): ")
+employment = input("Are you currently employed? (yes/no): ")
+
+if credit.lower() == "yes" and income >= 5000 and not (criminal_record.lower() == "yes") and (employment.lower() == "yes" or income >= 10000):
+    print("Congratulations! You qualify for a loan.")
+    loan_amount = float(input("How much would you like to borrow? "))
+    print("You have been approved for a loan of $" + str(loan_amount) + ".")
+elif credit.lower() == "no" or income < 5000 or criminal_record.lower() == "yes" or (employment.lower() == "no" and income < 10000):
+    print("Sorry, you do not qualify for a loan.")
+else:
+    print("Please provide valid input.")
 
 
