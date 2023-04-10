@@ -1,4 +1,4 @@
 git pull
 git add -A 
 git commit -a -m 'Update from Windows'
-git push
+git push 

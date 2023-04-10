@@ -100,6 +100,12 @@ numbers.append(6) # will add a 6 to the end of the list
 numbers.insert(0, 'W') # insert into the list, the first number is the index and the second is what you want to insert
 # above it will insert into the start of the list
 numbers.remove(3) # will remove the number 3 from the list 
+numbers.pop(2) # will remove the number from the list, put the index in the brackets for the number you want to remove
+# there is also other things, for example 
+nums1 = [1,2,3,4,5,6,7,8]
+max(nums1) # will give the maximum number in the list
+min(nums1) # will give the minimum number in the list
+del nums1[0:3] # this will delete the values in the list with the index numbers from 0 to 2, since 3 is the end and it wont count
 print(len(numbers)) # will count how many elements are in a list and any modifications if put below them
 # so for example this will give us 6 since we have W, 1, 2, 4, 5, 6 in the list because of the change's we've made to it 
 numbers.clear() # doesnt need any values, will just clear the list
@@ -129,6 +135,13 @@ msg = f'{first} {last} is a coder'
 print(msg)
 # this will print John Smith is a coder
 # this make's it easier to type 
+#! Sets 
+# sets are kinda like lists, they contain multiple values but are written with {}
+# for example 
+set = {10, 11, 12, 13, 14}
+print(set) # there is a chance that this will change the order the set is written in, althought sometimes you might get the same set multiple times
+# the main thing is that set does not support assignment of values, that is to say it wont work with index numbers
+# for example if you type set[0] = 9 you will get an error because set doesnt support assignment
 #! Functions
 def function(): # this is a function
     print("Hello")
