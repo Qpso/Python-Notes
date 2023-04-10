@@ -106,6 +106,11 @@ nums1 = [1,2,3,4,5,6,7,8]
 max(nums1) # will give the maximum number in the list
 min(nums1) # will give the minimum number in the list
 del nums1[0:3] # this will delete the values in the list with the index numbers from 0 to 2, since 3 is the end and it wont count
+# if you add 2 variables it is assigned like this:
+nume1 = 100 # this will have the index number 0 
+nume2 = 200 # this will have the index number 1
+nume3 = 400 # this will have the index number 2
+summary = nume1 + nume2 + nume3 # and summary will have the index number 3
 print(len(numbers)) # will count how many elements are in a list and any modifications if put below them
 # so for example this will give us 6 since we have W, 1, 2, 4, 5, 6 in the list because of the change's we've made to it 
 numbers.clear() # doesnt need any values, will just clear the list
@@ -209,4 +214,9 @@ test = "Haris"
 print(test.upper()) 
 # because this functions is specific to strings, we refer to it as a method 
 # this doesn't modify the original string, it just returns the uppercase version of the string, so if you print(test) you should still print Haris
+# the variables you have are assigned with an address that is allocated in the memory
+# for example to get the address we use:
+print(id(nume2)) # which for now will give an id 1630272231888
+# but if there are two variables assigned with the same value, they will have the same address 
+
 
