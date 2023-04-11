@@ -147,6 +147,28 @@ set = {10, 11, 12, 13, 14}
 print(set) # there is a chance that this will change the order the set is written in, althought sometimes you might get the same set multiple times
 # the main thing is that set does not support assignment of values, that is to say it wont work with index numbers
 # for example if you type set[0] = 9 you will get an error because set doesnt support assignment
+
+#! Built-In Functions 
+
+# there are also many built in functions that we've already used in python like print, int, str, len, etc. 
+# built in functions are defined inside the python programming language and can be called from anywhere 
+# here are a few examples taken from https://github.com/royalfalcon1146/python/blob/main/main.py
+'''
+string.replace("n", "m") # a method that outputs the same string but every "n" character is replaced with "m"
+     (can be used to remove space between words in a sentence).
+string.upper() # a method that outputs the string all in uppercase.
+string.lower() # a method that outputs the string all in lowercase.
+string.strip() # a method that outputs the string without the surrounding spaces (spaces at the end and beginning).
+string.lstrip() # a method that outputs the string without the spaces/indents at the left side.
+string.rstrip() # a method that outputs the string without the spaces/indents at the right side.
+string.count("e") # a method that outputs the number of times the letter "e" was mentioned in the string.
+string.endswith("ing") # a method that checks whether the string ends with "ing" or not, output is boolean.
+string.isnumeric() # a method that checks if the string is a numerical value.
+string.join(["This", "is", "a", "sentence"]) # a method that outputs the list of words with the string between them.
+string.split() # a method that outputs a list of all the words in the string.
+
+'''
+
 #! Functions
 def function(): # this is a function
     print("Hello")
@@ -195,9 +217,6 @@ print(messag) # when printed we will get "helloo" since python reads top to bott
 
 # now the reason this is a bad pratice is because there might be multiple functions that rely on the value of the first global variable 
 # hence changing it inside is a bad idea 
-
-# there are also many built in functions that we've already used in python like print, int, str, len, etc. 
-# built in functions are defined inside the python programming language and can be called from anywhere 
 
 # I've made examples of functions called example 1, it's in the repository.
 
