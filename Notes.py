@@ -345,8 +345,8 @@ bin(3) # will give the binary representation of 3 or a variable you put in (the 
 '''
 AND takes the binary of the number and multiplies them (starting from right going left) , use & for and
     example:
-        binary rep of 2 = 0010 , it's just 10 but to make it easier we write it in 4 digits
-        binary rep of 4 = 0100 
+        binary rep of 2 = 0010 , it's just 10 but to make it easier we write it in 4 digits also before the 4 digits is 0b, 0 to say it's positive, b=binary
+        binary rep of 4 = 0100  , I've not included 0b, oh and if it was negative it'd be -0b
         start with the last digit of each number, so 0x0 is 0, then 1x0 is 0, 0x1 is 0, 0x0 is 0, we get back 0000
         so the if you do print(2&4) you will get 0 since the binary of it is 0000
 
@@ -361,6 +361,12 @@ OR add the binary rep of the numbers (starting from right going left) , use | fo
         note that if you get 1 + 1 it will equal to 1 
 
 
-NOT
+NOT takes the binary rep of a number and gives the opposite (starting from right going left) , use ~ for not
+    example:
+        let's use 2 again:
+         binary rep of 2 = 0010 
+         opposite of 0 is 1, 1 is 0, 0 is 1, 0 again is 1, we get 1101, and the 0b will become -0b
+          so the if you do print(~2) you will get -3 since the binary of it is 1101
+
 XOR
 '''
