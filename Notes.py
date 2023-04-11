@@ -320,3 +320,28 @@ import math as m
 print(m.sqrt(9))  # Outputs: 3.0
 
 # for more information about the math module visit https://docs.python.org/3/library/math.html 
+
+#! Binary Operation:
+bin(3) # will give the binary representation of 3 or a variable you put in
+'''
+AND takes the binary of the number and multiplies them (starting from right going left) , use & for and
+    example:
+        binary rep of 2 = 0010 , it's just 10 but to make it easier we write it in 4 digits
+        binary rep of 4 = 0100 
+        start with the last digit of each number, so 0x0 is 0, then 1x0 is 0, 0x1 is 0, 0x0 is 0, we get back 0000
+        so the if you do print(2&4) you will get 0 since the binary of it is 0000
+
+
+OR add the binary rep of the numbers (starting from right going left) , use | for or
+    example:
+        let's use 2 and 4 again:
+        binary rep of 2 = 0010 
+        binary rep of 4 = 0100
+        now we add them, 0 + 0 is 0, 1 + 0 is 1, 0 + 1 is 1, 0 + 0 is 0, we get back 0110 
+        so the if you do print(2|4) you will get 6 since the binary of it is 0110
+        note that if you get 1 + 1 it will equal to 1 
+
+
+NOT
+XOR
+'''
