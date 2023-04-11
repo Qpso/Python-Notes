@@ -322,7 +322,7 @@ print(m.sqrt(9))  # Outputs: 3.0
 # for more information about the math module visit https://docs.python.org/3/library/math.html 
 
 #! Binary Operation:
-bin(3) # will give the binary representation of 3 or a variable you put in
+bin(3) # will give the binary representation of 3 or a variable you put in (the variable has to have an integer, nothing else)
 '''
 AND takes the binary of the number and multiplies them (starting from right going left) , use & for and
     example:

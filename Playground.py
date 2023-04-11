@@ -1,5 +1,4 @@
 # just here to test random code
 # yes it's supposed to be empty (usually)
 
-print(2|4) 
-print(bin(6))
+print(bin(2.4))
