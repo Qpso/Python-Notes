@@ -166,7 +166,14 @@ string.endswith("ing") # a method that checks whether the string ends with "ing"
 string.isnumeric() # a method that checks if the string is a numerical value.
 string.join(["This", "is", "a", "sentence"]) # a method that outputs the list of words with the string between them.
 string.split() # a method that outputs a list of all the words in the string.
-
+if you want input from a user you use it's function as so:
+answer = input("What is your answer? ") and you will get an input that will always be a string unless you change it
+    if the input you want has to be of just the first character, or first few, or last, etc. you can do:
+    answer = input("What is your answer? ")[0] 0 being the index you want, we want the first char so 0, but if you want index 0 to 5 you can do [0:5] etc.
+    now if you are writing an equation in it and you want it to understand you can use another function called eval like so:
+    eq = input("Enter your equation ") so if you wrote 23+45.3 it will understand and print that
+    eq = eval(eq)
+    print(eq)
 '''
 
 #! Functions
@@ -183,7 +190,7 @@ def func(first, last): # first and last are variables in the function
 # leave 2 lines after defining one to make sure it works
 
 func("Haris", "The Human") # here you enter the values of the variables which is called an argument, this line as a whole is a function call
-print(round(1.9)) # rounds a number in it 
+print(round(1.9546 , 2 )) # rounds a number in it, the comma is how many digits you want after the decimil point
 
 # here's another example using return
 def add_numbers(n1,n2):
@@ -366,7 +373,16 @@ NOT takes the binary rep of a number and gives the opposite (starting from right
         let's use 2 again:
          binary rep of 2 = 0010 
          opposite of 0 is 1, 1 is 0, 0 is 1, 0 again is 1, we get 1101, and the 0b will become -0b
-          so the if you do print(~2) you will get -3 since the binary of it is 1101
+          so if you do print(~2) you will get -3 since the binary of it is 1101
 
-XOR
+XOR takes the binary rep of 2 numbers and if they are the same, like 0 0 or 1 1 then it will give 0, but if it is diffrent, like 1 0 or 0 1, it will give 1
+    example:
+        let's use 15 and 2 
+        binary rep of 15 is 1111
+        binary rep of 2 is 0010
+        so (going right to left) 1 0 is 1, 1 1 is 0, 1 0, is 1 and again 1 0 is 1, so we get 1101
+        so if you print(15^2) you will get 13 since 1101 is it's binary rep
+
 '''
+
+
