@@ -174,6 +174,11 @@ answer = input("What is your answer? ") and you will get an input that will alwa
     eq = input("Enter your equation ") so if you wrote 23+45.3 it will understand and print that
     eq = eval(eq)
     print(eq)
+    
+if you want to print something a number of time's or write a value a number of times do:
+val = (100* "names")
+
+
 '''
 
 #! Functions
