@@ -389,5 +389,3 @@ XOR takes the binary rep of 2 numbers and if they are the same, like 0 0 or 1 1 
         so if you print(15^2) you will get 13 since 1101 is it's binary rep
 
 '''
-
-
