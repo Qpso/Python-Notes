@@ -78,6 +78,14 @@ while n <= 10:
     n += 1 
     # this will give us X, break line, XX, break line, XXX, and so on until we get to 10 X's
     # side note idk why the XXX is blue 
+
+j=0
+
+days = ['Sunday' , 'Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday']
+while j<len(days): # here you dont have to count the list and then put a number, just use len and it will print it all
+    print(days[j]) # instead of writing the index number of all the days in the list, we can just use j, starting at 0 for index 0, and add till len(days)
+    j = j + 1
+
 #! Lists
 # we usually have integers, strings, booleans, and floats, but there's also something like lists: 
 names = ["Harris", "Bob", "Mosh", "Sam", "Dan"] # use the square brackets for a list
