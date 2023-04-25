@@ -397,3 +397,67 @@ XOR takes the binary rep of 2 numbers and if they are the same, like 0 0 or 1 1 
         so if you print(15^2) you will get 13 since 1101 is it's binary rep
 
 '''
+
+#! For Loops
+
+# Example of a for loop that iterates over a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Example of a for loop that generates a sequence of numbers using range()
+for i in range(1, 5):
+    print(i)
+
+# Example of a for loop that uses enumerate() to get the index and value of each item in a list
+fruits = ["apple", "banana", "cherry"]
+for i, fruit in enumerate(fruits):
+    print(i, fruit)
+
+# Example of a for loop with a conditional statement to filter items in a list
+numbers = [1, 2, 3, 4, 5]
+even_numbers = []
+for num in numbers:
+    if num % 2 == 0:
+        even_numbers.append(num)
+print(even_numbers)x
+
+# Here's why we did even_numbers = [] above:
+
+# Example of a for loop with a conditional statement to filter items in a list
+numbero = [1, 2, 3, 4, 5]
+
+# Initialize an empty list to store the even numbers that we find
+even_numbero = []
+
+# Iterate over each number in the list and check if it's even
+for num in numbero:
+    if num % 2 == 0:
+        # If the number is even, append it to the even_numbers list
+        even_numbero.append(num)
+
+# Print the even_numbers list
+print(even_numbero)
+
+# Nested for loop to print pattern
+for i in range(4):
+    for j in range(4):
+        # Print '#' character with end='' to print on the same line
+        print("#", end="")
+    
+    # Print empty string to move to the next line
+    print()
+
+
+"""
+
+In this code, we have a nested for loop. The outer for loop iterates over the range of numbers from 0 to 3 (inclusive) using `range(4)`.
+This loop controls the number of rows in the pattern. The inner for loop also iterates over the range of numbers from 0 to 3 (inclusive) using `range(4)`.
+This loop controls the number of columns in the pattern.
+ Inside the inner loop, we print the '#' character using the `print()` function with the `end` parameter set to an empty string (`end=""`).
+The `end` parameter specifies what should be printed at the end of the string instead of the default newline character.
+ By setting it to an empty string, we ensure that each '#' character is printed on the same line. 
+After the inner loop finishes, we print an empty string using `print()` again,
+ which causes a newline character to be printed and moves us to the next row in the pattern. 
+
+""" 
