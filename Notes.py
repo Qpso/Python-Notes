@@ -420,7 +420,7 @@ even_numbers = []
 for num in numbers:
     if num % 2 == 0:
         even_numbers.append(num)
-print(even_numbers)x
+print(even_numbers)
 
 # Here's why we did even_numbers = [] above:
 
@@ -461,3 +461,20 @@ After the inner loop finishes, we print an empty string using `print()` again,
  which causes a newline character to be printed and moves us to the next row in the pattern. 
 
 """ 
+
+#! Some more bult-in Functions 
+
+inputs = input("Enter a few values seperated by a ,: ")
+
+L = inputs.split(',') # enter what you wil use to seperate the values
+# if u want it to be space then leave the brackets blank
+
+# above function will make the values into a list
+
+tp = tuple(L)
+
+print(L , tp)
+
+# if you want it as a tuple you can do tuple(L) and it will return it as a tuple
+# however it can only become a tuple from a list, not from a string
+# so first it has to be a list then only a tuple

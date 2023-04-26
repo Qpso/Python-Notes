@@ -34,4 +34,31 @@ def multiply(*numbers):
         total *= number
     return total 
 
+#! Example Using For Loops and If statements to make a prime number calcualtor:
+num = int(input("Input a number: "))
+
+if num>1:
+
+    for i in range(1,num):
+
+
+        if num == 2:
+            print("2 is a prime number")
+            break
+        
+
+        elif num%i == 0:
+            print(num , "is not a prime number")
+            break
+
+
+
+        else:
+            print(num , "is a prime number")
+            break
+
+else:
+    print("Enter a number higher tha 1")
+    
+            
 
