@@ -60,5 +60,12 @@ if num>1:
 else:
     print("Enter a number higher tha 1")
     
+
+#? Basic Function Example: 
+def add(num1, num2): # num1 and num2 are called parameters 
+    result = num1 + num2
+    print("The sum of", num1, "and", num2, "is", result)
+
+add(3, 5)
             
 
