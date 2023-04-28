@@ -62,7 +62,7 @@ else:
     
 
 #? Basic Function Example: 
-def add(num1, num2): # num1 and num2 are called parameters 
+def add(num1, num2): # num1 and num2 are called parameters or arguments 
     result = num1 + num2
     print("The sum of", num1, "and", num2, "is", result)
 
