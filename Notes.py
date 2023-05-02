@@ -479,3 +479,30 @@ print(L , tp)
 # however it can only become a tuple from a list, not from a string
 # so first it has to be a list then only a tuple
 
+#! Dictionaries 
+
+# Definition of dictionaries in Python with examples:
+
+# A dictionary in Python is a collection of key-value pairs that are unordered, changeable, and indexed. Dictionaries are written using curly braces ({}) and each key-value pair is separated by a colon (:). The keys in a dictionary must be unique and immutable, while the values can be of any type and can be duplicated.
+
+# Creating a dictionary
+my_dict = {'name': 'John', 'age': 30, 'gender': 'male'}
+
+# Accessing values in a dictionary
+print(my_dict['name'])  # Output: John
+
+# Adding a new key-value pair to a dictionary
+my_dict['city'] = 'New York'
+print(my_dict)  # Output: {'name': 'John', 'age': 30, 'gender': 'male', 'city': 'New York'}
+
+# Removing a key-value pair from a dictionary
+del my_dict['gender']
+print(my_dict)  # Output: {'name': 'John', 'age': 30, 'city': 'New York'}
+
+# Looping through a dictionary
+for key, value in my_dict.items():
+    print(key, value)
+# Output:
+# name John
+# age 30
+# city New York
