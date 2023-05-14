@@ -482,7 +482,6 @@ print(L , tp)
 #! Dictionaries 
 
 # Definition of dictionaries in Python with examples:
-
 # A dictionary in Python is a collection of key-value pairs that are unordered, changeable, and indexed. Dictionaries are written using curly braces ({}) and each key-value pair is separated by a colon (:). The keys in a dictionary must be unique and immutable, while the values can be of any type and can be duplicated.
 
 # Creating a dictionary
@@ -506,3 +505,13 @@ for key, value in my_dict.items():
 # name John
 # age 30
 # city New York
+
+#Lambda/Anon Functions:
+
+x = lambda y:y+2 #this first y is the bound variable and the second is the body
+#to use: 
+print(x(10)) # will give 12
+
+# or you can do it with more arguments:
+z = lambda a,c:a*c
+print(z(20,40))
