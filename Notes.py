@@ -515,3 +515,8 @@ print(x(10)) # will give 12
 # or you can do it with more arguments:
 z = lambda a,c:a*c
 print(z(20,40))
+
+# you can do:
+# _(10,20) to use the most recent function
+
+# you can also ask for input:
