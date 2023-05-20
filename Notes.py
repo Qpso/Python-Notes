@@ -520,3 +520,7 @@ print(z(20,40))
 # _(10,20) to use the most recent function
 
 # you can also ask for input:
+'''
+z = lambda: int(input("Enter the first number: ")) * int(input("Enter the second number: "))
+print(z())
+'''
