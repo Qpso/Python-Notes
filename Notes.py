@@ -520,7 +520,16 @@ print(z(20,40))
 # _(10,20) to use the most recent function
 
 # you can also ask for input:
-'''
-z = lambda: int(input("Enter the first number: ")) * int(input("Enter the second number: "))
-print(z())
-'''
+
+h = (lambda x, y, z: (x + y + z))(int(input("Enter Number 1: ")), int(input("Enter Number 2: ")), int(input("Enter Number 3: ")))
+print(h)
+
+# and can also use multiple variables ^
+
+i = (lambda *args:sum(args)) (int(input("Enter Number 1: ")), int(input("Enter Number 2: ")), int(input("Enter Number 3: ")))
+print(i)
+
+# or do this ^
+
+
+
