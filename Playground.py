@@ -1,8 +1,12 @@
+# empty playground for tests
 
+def sum(a,b):
+    
+    return a + b
 
-l1 = ['blue' , 'red' , 'orange' , 'white']
-l2 = ['sky' , 'apple' , 'sunset' , 'clouds']
+items = [10, 20, 30, 40, 50]
+nums = [5, 10, 15, 20, 25]
 
-fl = l1 + l2 
-for i1,i2 in zip(l1,l2):
-    print(i1,i2)
+l = [x for x in map(sum,items, nums)]
+
+print(l)

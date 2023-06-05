@@ -559,3 +559,27 @@ try:
         print("File updated successfully.")
 except FileNotFoundError:
     print(f"File '{file_path}' not found.")
+
+# you can use the zip function like this as well:
+
+itemsds = [10, 20, 30, 40, 50]
+numsds = [5, 10, 15, 20, 25]
+
+zipped = [x + y for x, y in zip(itemsds, numsds)]
+
+print(zipped)
+
+
+# you can you map to map one list to other:
+
+def sum(a,b):
+    
+    return a + b
+
+items = [10, 20, 30, 40, 50]
+nums = [5, 10, 15, 20, 25]
+
+l = [x for x in map(sum,items, nums)]
+
+print(l)
+
