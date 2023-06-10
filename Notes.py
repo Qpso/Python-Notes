@@ -583,3 +583,32 @@ l = [x for x in map(sum,items, nums)]
 
 print(l)
 
+# and you can make more than just one function:
+
+def multiply(a,b):
+
+    return  a*b
+
+n1 = [5,2,6]
+n2 = [2,10,5]
+
+multnumbs = [x for x in map(multiply,n1,n2)]
+
+print(multnumbs)
+
+# you can also use lambda for this:
+
+L1 = [0,1,2]
+
+for z in map(lambda x:x+10,L1):
+
+    print(z)
+
+# and it doesn't have to be 1 variable:
+
+lis1 = [10,20,30]
+lis2 = [5,10,15]
+
+for w in map(lambda x,y:x+y,lis1,lis2):
+
+    print(w)

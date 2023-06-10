@@ -1,12 +1,6 @@
-# empty playground for tests
+lis1 = [10,20,30]
+lis2 = [5,10,15]
 
-def sum(a,b):
-    
-    return a + b
+for w in map(lambda x,y:x+y,lis1,lis2):
 
-items = [10, 20, 30, 40, 50]
-nums = [5, 10, 15, 20, 25]
-
-l = [x for x in map(sum,items, nums)]
-
-print(l)
+    print(w)
