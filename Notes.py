@@ -612,3 +612,37 @@ lis2 = [5,10,15]
 for w in map(lambda x,y:x+y,lis1,lis2):
 
     print(w)
+
+# the filter funnction:
+def isEven(a):
+
+    if a % 2 == 0:
+
+        return True 
+    
+    else:
+
+        return False
+    
+
+LisT1 = [12,13,14,15,16,17,18]
+
+filtr = [x for x in filter(isEven,LisT1)]
+# returns only the true variables and instead of returning True,True,True, it returns the values (here the numbers)
+print(filtr)
+
+#how to add more paramaters while defining a function
+
+def addNumbers(*numbrs):
+
+    sum = 0
+
+    for n in numbrs: 
+
+        sum = sum + n
+
+    print(sum)
+
+addNumbers(10,20,30)
+
+# this will allow for multiple numbers to be taken in
