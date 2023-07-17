@@ -241,7 +241,7 @@ print(messag) # when printed we will get "helloo" since python reads top to bott
 # I've made examples of functions called example 1, it's in the repository.
 
 # here's how to use functions to access certain values, it's called a dictionary.
-def save_user(**user):
+def save_user(**user): #the two *'s are called kwags, key word arguments        
     print(user["name"]) # the variable inside the square brackets is the value we'll be accessing 
 
 
@@ -506,7 +506,7 @@ for key, value in my_dict.items():
 # age 30
 # city New York
 
-#Lambda/Anon Functions:
+#! Lambda/Anon Functions:
 
 x = lambda y:y+2 #this first y is the bound variable and the second is the body
 #to use: 
@@ -569,6 +569,8 @@ zipped = [x + y for x, y in zip(itemsds, numsds)]
 
 print(zipped)
 
+
+#! Map, Zip, Filter, and Other Functions
 
 # you can you map to map one list to other:
 
@@ -646,3 +648,177 @@ def addNumbers(*numbrs):
 addNumbers(10,20,30)
 
 # this will allow for multiple numbers to be taken in
+
+#! Classes
+# In Python, classes are a fundamental concept of object-oriented programming (OOP)
+# A class is like a blueprint or template for creating objects (instances)
+# It defines a collection of attributes (variables) and methods (functions) that encapsulate the behavior and data associated with the objects
+
+# Before showing you a class I have to show you how to construct one using a constructor called __init__
+# The __init__ function is a special method in Python classes, also known as the constructor. It is automatically called when an instance of a class is created
+# The purpose of the __init__ method is to initialize the attributes of an object to their initial values
+# Here's how the __init__ method works in the context of our upcoming example of a class:
+
+'''
+
+def __init__(self, make, model, year):
+    self.make = make
+    self.model = model
+    self.year = year
+    self.is_engine_on = False
+
+'''
+
+# In the upcoming example class, the __init__ method takes four parameters: self, make, model, and year. The self parameter is a reference to the instance being created
+# Inside the __init__ method, we assign the values passed as arguments (make, model, year) to the instance variables (self.make, self.model, self.year)
+# These variables hold the specific attribute values for each instance of the class
+# Here's an example to illustrate the concept of classes in Python and the __init__ constructor:
+
+class Airplane:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.is_engine_on = False
+
+    def start_engine(self):
+        self.is_engine_on = True
+        print("Engine started.")
+
+    def stop_engine(self):
+        self.is_engine_on = False
+        print("Engine stopped.")
+
+    def fly(self):
+        if self.is_engine_on:
+            print("Flying...")
+        else:
+            print("Please start the engine first.")
+
+# Creating instances of the Airplane class
+airplane1 = Airplane("Boeing", "747", 2000)
+airplane2 = Airplane("Airbus", "A380", 2010)
+
+# Accessing attributes
+print(airplane1.make)  # Output: Boeing
+print(airplane2.year)  # Output: 2010
+
+# Calling methods
+airplane1.start_engine()  # Output: Engine started.
+airplane1.fly()  # Output: Flying...
+
+airplane2.start_engine()  # Output: Engine started.
+airplane2.fly()  # Output: Flying...
+
+airplane1.stop_engine()  # Output: Engine stopped.
+airplane1.fly()  # Output: Please start the engine first.
+
+# For example, when we create the airplane1 instance with the statement airplane1 = Airplane("Boeing", "747", 2000)
+# the __init__ method is automatically called with the provided arguments "Boeing", "747", and 2000
+# It sets the make attribute of airplane1 to "Boeing", the model attribute to "747", the year attribute to 2000, and the is_engine_on attribute to False
+# The __init__ method allows us to ensure that every instance of the class has its attributes properly initialized when created
+# It provides a convenient place to set up the initial state of the object and perform any necessary setup or initialization tasks
+# By defining the __init__ method, we can create objects with different initial attribute values by passing arguments during object creation, as demonstrated in the example
+
+#Self:
+# In Python, self is a conventional name used as the first parameter in a method definition within a class. It refers to the instance of the class itself
+# When a method is called on an instance of a class, self is automatically passed as the first argument to that method
+# The self parameter allows us to access the attributes and methods of the current instance within the class
+# It acts as a reference to the specific object that the method is being called on
+# By using self, we can access and modify the instance's attributes, call other methods within the class, or perform any operations specific to that instance
+# For example, in our airplane class:
+
+'''
+
+def start_engine(self):
+    self.is_engine_on = True
+    print("Engine started.")
+
+'''
+
+# The start_engine method takes self as the first parameter. Inside the method, self.is_engine_on refers to the is_engine_on attribute of the current instance
+# By using self, we can set the is_engine_on attribute of the current instance to True
+# When we call the start_engine method on an instance, such as airplane1.start_engine(), the instance airplane1 is automatically passed as self
+# Therefore, self within the method will refer to airplane1, and the is_engine_on attribute of airplane1 will be updated accordingly
+# self is a reference to the instance of the class itself. It allows us to access and modify the instance's attributes and call other methods within the class
+# Using self ensures that each instance can maintain its own unique state and behavior
+
+#! Getters and Setters
+# In object-oriented programming, getters and setters are methods used to access (get) and modify (set) the values of an object's attributes, respectively
+# They provide a way to encapsulate the internal representation of an object and control access to its data
+# Getters and setters are useful for maintaining data integrity and providing a level of abstraction between the object's internal representation and its usage by external code
+# Here's an example of how getters and setters can be implemented in Python:
+
+class Person:
+    def __init__(self, name, age):
+        self._name = name
+        self._age = age
+
+    # Getter for name
+    def get_name(self):
+        return self._name
+
+    # Setter for name
+    def set_name(self, name):
+        self._name = name
+
+    # Getter for age
+    def get_age(self):
+        return self._age
+
+    # Setter for age
+    def set_age(self, age):
+        self._age = age
+
+# Creating an instance of the Person class
+person = Person("Alice", 25)
+
+# Using the getter method to access the attribute
+print(person.get_name())  # Output: Alice
+
+# Using the setter method to modify the attribute
+person.set_name("Bob")
+print(person.get_name())  # Output: Bob
+
+# Using the setter method with validation
+person.set_age(30)
+print(person.get_age())  # Output: 30
+
+# In this example, the Person class has attributes _name and _age (prefixed with an underscore to indicate they are intended to be private)
+# For each attribute, there is a getter method (e.g., get_name(), get_age()) and a setter method (e.g., set_name(), set_age())
+# The getter methods simply return the values of the corresponding attributes
+# The setter methods allow external code to modify the values but typically include additional logic to validate the input before updating the attribute
+# By using getters and setters, we can control how attribute values are accessed and modified, ensuring consistency and enforcing any necessary constraints or transformations
+
+#! Try and Expect 
+# In Python, try and except are used together to implement exception handling
+# It allows you to handle and recover from errors or exceptional situations that may occur during the execution of your code 
+# So instead of the code stopping at an error it would be able to continue 
+# The basic syntax of try and except is as follows:
+
+'''
+
+try:
+    # Code that may raise an exception
+    # ...
+except ExceptionType:
+    # Code to handle the exception
+    # ...
+
+'''
+
+# If an exception is raised within the try block, the program flow is immediately transferred to the corresponding except block
+# The ExceptionType in the except statement specifies the type of exception you want to catch and handle
+# You can replace ExceptionType with a specific exception class, such as ValueError, TypeError, or use a more general Exception to catch any exception
+# Here's an example that demonstrates the usage of try and except:
+
+try:
+    numerator = 10
+    denominator = 0
+    result = numerator / denominator
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Error: Division by zero occurred.")
+
+# In this example, we attempt to divide numerator by denominator, which is set to 0. Since division by zero is not allowed, a ZeroDivisionError exception is raised
+# Using try and except allows you to anticipate and handle potential errors gracefully, preventing your program from crashing and/or providing alternative actions when exceptions occur
