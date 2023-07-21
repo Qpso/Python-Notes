@@ -822,3 +822,43 @@ except ZeroDivisionError:
 
 # In this example, we attempt to divide numerator by denominator, which is set to 0. Since division by zero is not allowed, a ZeroDivisionError exception is raised
 # Using try and except allows you to anticipate and handle potential errors gracefully, preventing your program from crashing and/or providing alternative actions when exceptions occur
+
+#! Creating a File using OS module
+
+import os
+
+file_path = "example.txt"
+
+try:
+    # Attempt to create a new file with mode "x" (exclusive creation)
+    with open(file_path, "x") as file:
+        print("File created successfully.")
+except FileExistsError:
+    # If the file already exists, handle the FileExistsError
+    print("File already exists.")
+
+# Writing to a File
+
+file_path = "example.txt"
+
+with open(file_path, "w") as file:
+    # Open the file in write mode ("w") and use the write() method to add content
+    file.write("Hello, this is some text.\n")
+    file.write("This is another line of text.")
+
+# Reading from a File
+
+file_path = "example.txt"
+
+with open(file_path, "r") as file:
+    # Open the file in read mode ("r") and use the read() method to read the content
+    content = file.read()
+    print(content)
+
+# Appending to a File
+
+file_path = "example.txt"
+
+with open(file_path, "a") as file:
+    # Open the file in append mode ("a") and use the write() method to add content
+    file.write("\nThis line will be appended to the file.")
